@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="org.moflon.emf.build.SiteXMLBuilderNature"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="org.emoflon.sitexml.MoflonSiteXMLNature">
+         </run>
+      </runtime>
+      <builder
+            id="org.moflon.emf.build.SiteXMLBuilder">
+      </builder>
+      <one-of-nature
+            id="org.moflon.emf.build.SiteXMLBuilderNature">
+      </one-of-nature>
+   </extension>
+   <extension
+         id="org.moflon.emf.build.SiteXMLBuilder"
+         point="org.eclipse.core.resources.builders">
+      <builder
+            isConfigurable="true">
+         <run
+               class="org.emoflon.sitexml.SiteXMLBuilder">
+         </run>
+      </builder>
+   </extension>
+   <extension
+         id="SiteXMLBuilder"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="org.emoflon.sitexml.SiteXMLBuilderApp">
+         </run>
+      </application>
+   </extension>
+
+</plugin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.emoflon.site.feature_1.0.0.202202091548.jar" id="org.emoflon.site.feature" version="1.0.0.202202091548">
+      <category name="org.emoflon.site.build"/>
+   </feature>
+   <category-def name="org.emoflon.site.build" label="eMoflon - Updatesitebuilder"/>
+</site>
