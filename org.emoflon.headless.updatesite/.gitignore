@@ -1,0 +1,5 @@
+plugins/
+features/
+build/
+artifacts.jar
+content.jar
