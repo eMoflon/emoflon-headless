@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.emoflon.jar.feature_1.0.0.202202101532.jar" id="org.emoflon.jar.feature" version="1.0.0.202202101532">
+      <category name="eMoflon-HeadlessFeatures"/>
+   </feature>
+   <feature url="features/org.emoflon.site.feature_1.0.0.202202101532.jar" id="org.emoflon.site.feature" version="1.0.0.202202101532">
+      <category name="eMoflon-HeadlessFeatures"/>
+   </feature>
+   <category-def name="eMoflon-HeadlessFeatures" label="eMoflon - HeadlessFeatures"/>
+</site>

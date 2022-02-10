@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.emoflon.jar.build
+Bundle-SymbolicName: org.emoflon.jar.build;singleton:=true
+Bundle-Version: 0.1.0.qualifier
+Require-Bundle: org.eclipse.emf.ecore,
+ org.eclipse.equinox.app,
+ org.eclipse.swt,
+ org.eclipse.jdt.ui,
+ org.eclipse.equinox.registry,
+ org.eclipse.debug.core
