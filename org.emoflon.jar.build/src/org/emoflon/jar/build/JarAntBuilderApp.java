@@ -63,7 +63,7 @@ public class JarAntBuilderApp implements IApplication{
 		ILaunchConfiguration lConfig = new MyLaunchConfiguration(launchFile);
 		
 		ExtractLibraryHandler libraryHandler = new ExtractLibraryHandler();
-		FatJarAntExporter antExporter= libraryHandler.getAntExporter(antIFile.getLocation().makeAbsolute(), jarIFile.getLocation(), lConfig);
+		FatJarAntExporter antExporter = libraryHandler.getAntExporter(antIFile.getLocation().makeAbsolute(), jarIFile.getLocation(), lConfig);
 		try {
 			antExporter.run(new MultiStatus("org.emoflon.jar.build", 0, "No status"));
 		} catch (CoreException e) {
