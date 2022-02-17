@@ -17,7 +17,7 @@ import org.eclipse.equinox.internal.app.MainApplicationLauncher;
 import org.eclipse.jdt.internal.ui.jarpackagerfat.FatJarAntExporter;
 import org.eclipse.jdt.internal.ui.jarpackagerfat.FatJarPackagerMessages;
 import org.eclipse.jdt.internal.ui.jarpackagerfat.FatJarPackagerUtil;
-import org.eclipse.jdt.internal.ui.jarpackagerfat.FatJarPackageWizardPage.ExtractLibraryHandler;
+import org.eclipse.jdt.internal.ui.jarpackagerfat.FatJarPackageWizardPage.PackageLibraryHandler;
 import org.eclipse.jdt.ui.JavaUI;
 import org.eclipse.debug.internal.core.LaunchConfiguration;
 
@@ -62,7 +62,7 @@ public class JarAntBuilderApp implements IApplication{
 		
 		ILaunchConfiguration lConfig = new MyLaunchConfiguration(launchFile);
 		
-		ExtractLibraryHandler libraryHandler = new ExtractLibraryHandler();
+		PackageLibraryHandler libraryHandler = new PackageLibraryHandler();
 		FatJarAntExporter antExporter = libraryHandler.getAntExporter(antIFile.getLocation().makeAbsolute(), jarIFile.getLocation(), lConfig);
 		try {
 			antExporter.run(new MultiStatus("org.emoflon.jar.build", 0, "No status"));
